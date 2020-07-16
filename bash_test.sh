@@ -17,8 +17,9 @@ do
 	
 	# Print menu.
 	echo -e "1. Show current path."
-	echo -e "2. Print \"Hello World!\"."
-	echo -e "3. List files in current directory."
+	echo -e "2. Show current date."
+	echo -e "3. Print \"Hello World!\"."
+	echo -e "4. List files in current directory."
 	echo -e "\nPress /q, q, or 0 to exit."
 	
 	# *** Accept user input ***
@@ -29,10 +30,13 @@ do
 	    1) 
 		    pwd # Display current path
 			read -p "Press any key to continue";;
-	    2)
+		2)
+		    date # Print the date
+			read -p "Press any key to continue";;
+	    3)
 		    echo -e "Hello World!" # Print "Hello World!"
 			read -p "Press any key to continue";;
-		3)
+		4)
 		    ls # List files in current directory.
 			read -p "Press any key to continue";;
 	    /q | q | 0)
